@@ -5,51 +5,53 @@ This repository demonstrates a RAG Q&A model leveraging Google GenAI for embeddi
 ## Overview
 
 This project implements a Retrieval Augmented Generation (RAG) system that:
-- Generates document embeddings using Google GenAI.
-- Uses ChromaDB for efficient vector-based document search.
-- Combines retrieval with natural language generation to answer questions based on custom documents.
+- Generates document embeddings using Google GenAI
+- Uses ChromaDB for efficient vector-based document search
+- Combines retrieval with natural language generation to answer questions based on custom documents
 
 ## Features
 
-- **Document Indexing:** Convert custom documents into embeddings.
-- **Vector Search:** Retrieve relevant documents from ChromaDB.
-- **Tailored Generation:** Generate natural language answers using the Gemini API.
+- **Document Indexing:** Convert custom documents into embeddings
+- **Vector Search:** Retrieve relevant documents from ChromaDB
+- **Tailored Generation:** Generate natural language answers using the Gemini API
 
 ## Setup & Installation
 
 1. **Clone the Repository:**
-
    ```bash
    git clone <repository-url>
    cd <repository-directory>
-2. Install Dependencies:
+   ```
+
+2. **Install Dependencies:**
+   ```bash
    pip install -qU "google-genai==1.7.0" "chromadb==0.6.3"
+   ```
 
-3, API Key Setup:
+3. **API Key Setup:**
+   - Store your Google API key in your Kaggle secret (named GOOGLE_API_KEY) or as an environment variable
 
-Store your Google API key in your Kaggle secret (named GOOGLE_API_KEY) or as an environment variable.
+## Usage
 
-Usage
 Run the provided Jupyter Notebook to:
+- Generate embeddings for your documents
+- Create and populate the ChromaDB collection
+- Execute queries and generate responses using the Gemini API
 
-Generate embeddings for your documents.
+## Customization
 
-Create and populate the ChromaDB collection.
-
-Execute queries and generate responses using the Gemini API.
-
-Customization:
 You can modify the embedded documents, tweak the model parameters in the GeminiEmbeddingFunction, or experiment with different retrieval settings to tailor the pipeline to your needs.
 
-Project Structure
-Notebooks: Contains the end-to-end pipeline demonstration.
+## Project Structure
 
-src/: Source code including custom embedding functions and database interactions.
+- **Notebooks:** Contains the end-to-end pipeline demonstration
+- **src/:** Source code including custom embedding functions and database interactions
+- **README.md:** This file
 
-README.md: This file.
+## License
 
-License
 This project is licensed under the Apache License 2.0.
 
-Acknowledgements
+## Acknowledgements
+
 Thanks to Google GenAI, ChromaDB, and the Kaggle community for their excellent tools and resources.
