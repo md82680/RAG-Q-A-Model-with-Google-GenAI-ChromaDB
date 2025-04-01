@@ -19,7 +19,7 @@ This project implements a Retrieval Augmented Generation (RAG) system that:
 
 1. **Clone the Repository:**
    ```bash
-   git clone [<repository-url>](https://github.com/md82680/RAG-QA-Model-with-Google-GenAI-ChromaDB.git)
+   git clone https://github.com/md82680/RAG-QA-Model-with-Google-GenAI-ChromaDB.git
    cd RAG-QA-Model-with-Google-GenAI-ChromaDB
 
    ```
